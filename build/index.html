@@ -21,7 +21,6 @@
                     <a href="#proyectos" class="px-4 py-2 rounded-lg border-white border-4  hover:bg-tertiary hover:text-white  active:border-tertiary">Proyectos</a>
                     <a href="#habilidades" class="px-4 py-2 rounded-lg border-white border-4 hover:bg-tertiary hover:text-white  active:border-tertiary">Habilidades</a>
                     <a href="#sobre-mi" class="px-4 py-2 rounded-lg border-white border-4 hover:bg-tertiary hover:text-white  active:border-tertiary">Sobre mí</a>
-                    <a href="#contacto" class="px-4 py-2 rounded-lg border-white border-4 hover:bg-tertiary hover:text-white  active:border-tertiary">Contacto</a>
                 </nav>
             </div>
         </section>
@@ -79,14 +78,112 @@
             <h2 class="text-5xl text-center font-bold my-10">
                 👨‍💻 Habilidades 👨‍💻
             </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 gap-8 ">
-                <!-- Aquí se mostrarán las habilidades -->
-                <div class="rounded-lg border-8 border-secondary text-center ml-32">
-                    <img src="/build/img/html5.png" alt="HTML5" class="w-64 mx-auto my-8">
-                    <h1 class="font-bold text-xl">HTML5</h1>
+           
+            <div class="relative w-full max-w-3xl mx-auto overflow-hidden dark:rounded-lg dark:bg-slate-200 dark:border-8 dark:border-secondary dark:py-5">
+                <!-- Contenedor de las diapositivas -->
+                <div id="carousel" class="flex transition-transform duration-500">
+                  <!-- Diapositiva 1 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/html5.png" alt="Slide 1" class="w-52 mx-auto">
+                  </div>
+                  <!-- Diapositiva 2 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/css.png" alt="Slide 2" class="w-36 mx-auto">
+                  </div>
+                  <!-- Diapositiva 3 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/JavaScript.png" alt="Slide 3" class="w-80 mx-auto">
+                  </div>
+                  <!-- Diapositiva 4 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/Bootstrap.png" alt="Slide 3" class="w-60 mx-auto">
+                  </div>
+                  <!-- Diapositiva 5 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/mysql.png" alt="Slide 3" class="w-52 mx-auto">
+                  </div>
+                  <!-- Diapositiva 6 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/PHP.png" alt="Slide 3" class="w-80 mx-auto">
+                  </div>
+                  <!-- Diapositiva 7 -->
+                  <div class="w-full flex-shrink-0">
+                    <img src="/build/img/codeigniter.svg" alt="Slide 3" class="w-44 mx-auto">
+                  </div>
+                </div>
+              
+                <!-- Controles -->
+                <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-md">
+                  &#10094;
+                </button>
+                <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-md">
+                  &#10095;
+                </button>
+              </div>
+              
+        </section>
+        <section id="sobre-mi" class=" grid grid-cols-1 lg:grid-cols-2 gap-8 ">
+            <div class="">
+
+                <h2 class="lg:ml-24 text-5xl text-center font-bold my-10 mx-auto">
+                    👨🏽‍💼 Sobre mí 👨🏽‍💼
+                </h2>
+
+                <div class="px-10 py-10 lg:ml-24 text-justify border-8 bg-slate-200 rounded-lg border-secondary">
+                    <img src="/build/img/sobre-mi.jpg" class="w-1/2 mx-auto rounded-xl shadow-lg shadow-tertiary" alt="sobre-mi">
+                    <p class="text-xl font-semibold mt-5 dark:text-black"> 
+                        Mi nombre es Gabriel Cervantes Hernández. Soy egresado de la
+              Universidad Politécnica de Tlaxcala, donde cursé la carrera de
+              Ingeniería en Tecnologías de la Información. Actualmente me
+              encuentro en proceso de titulación. Me apasiona el desarrollo de
+              software y sus diversas áreas, como la programación, el manejo de
+              bases de datos y el diseño de interfaces, entre otras.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="  ">
+                <h2 class="text-5xl text-center lg:mr-20  font-bold my-10 mx-auto">📞 Contacto 📞</h2>
+
+                <div class="px-10 py-10 lg:mr-20  dark:bg-slate-200 dark:border-secondary dark:border-8 rounded-lg dark:text-black font-semibold">
+
+                    <div class="mb-10 flex text-3xl justify-center">
+                        <img src="/build/img/github.svg" class="w-20" alt="Github">
+                        <div class=" text-center my-auto ml-10">
+                            <a href="https://github.com/GaruCH"> GaruCH</a>
+                        </div>
+                    </div>
+    
+                    <div class="my-10 flex text-2xl justify-center">
+                        <img src="/build/img/LinkedIn.png" class="w-20" alt="Github">
+                        <div class="text-center my-auto ml-10">
+                            <a href="https://www.linkedin.com/in/gabriel-cervantes-hernandez-0813b9226">Gabriel Cervantes Hernández</a>
+                        </div>
+                    </div>
+    
+                    <div class="my-10 flex text-2xl justify-center ">
+                        <img src="/build/img/gmail.png" class="w-20 ml-14" alt="Github">
+                        <div class="max-w-xs text-center text-wrap my-auto ml-10 pr-12">
+                            <h2 class="break-words"> gabriel.cervantes0103@gmail.com</h2>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex text-3xl justify-center">
+                        <img src="/build/img/Facebook_icon.png" class="w-20" alt="facebook">
+                        <div class=" text-center my-auto ml-10">
+                            <a href="https://www.facebook.com/gabriel.jimenes.50702"> Garu CH</a>
+                        </div>
+                    </div>
+
                 </div>
 
+            </div>
         </section>
     </main>
+    <footer class="w-full bg-secondary mt-10 px-5 py-5 text-center text-black font-bold text-lg">
+        <h1 class="my-auto">@Gabriel-Cervantes-Hernández 👨🏽‍💼</h1>
+    </footer>
+
+    <script src="/build/js/app.js"></script>
 </body>
 </html>
