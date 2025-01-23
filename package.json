@@ -98,7 +98,7 @@
     "yaml": "^2.7.0"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch"
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
     ,
     "prettier": "npx prettier --write **/*.html"
   },
