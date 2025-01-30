@@ -1,189 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body class="min-h-screen bg-slate-50 dark:bg-black  dark:text-white">
-    <header class="bg-secondary text-primary sticky top-0 z-10">
-        <section class="lg:max-w-8xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-4xl font-bold">
-              <a href="#principal">📁 Portafolio</a>  
-            </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi portafolio</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/5387/5387686.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="bg-background font-josefin">
+    <header class="">
+      <!-- Menú principal que aparece solo en pantallas grandes -->
+      <nav></nav>
+        <ul
+          class="bg-secondary font-bold text-white text-xl justify-center gap-32 py-4 lg:flex hidden border-b-4 border-b-black"
+        >
+          <li
+            class="flex items-center py-2 px-5 border-4 rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary"
+          >
+          <i data-feather="home"></i>
+            <a href="#" class="pt-1 ml-2">Inicio</a>
+          </li>
+          <li
+            class="flex items-center py-2 px-5 border-4 rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary"
+          >
+          <i data-feather="info"></i>
+            <a href="#" class="pt-1 ml-2">Sobre mí</a>
+          </li>
+          <li
+            class="flex items-center py-2 px-5 border-4 rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary"
+          >
+          <i data-feather="code"></i>
+            <a href="#" class="pt-1 ml-2">Proyectos</a>
+          </li>
+          <li
+            class="flex items-center py-2 px-5 border-4 rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary"
+          >
+          <i data-feather="mail"></i>
+            <a href="#" class="pt-1 ml-2">Contacto</a>
+          </li>
+        </ul>
+      </nav>
 
-            <div>
-                <button id="mobile-open-button" class="text-3xl lg:hidden focus:outline-none">
-                    &#9776;
-                </button>
-                <nav class="hidden lg:block space-x-10 ext-xl font-bold text-lg"  aria-label="main">
-                    <a href="#proyectos" class="px-4 py-2 rounded-lg border-white border-4  hover:bg-tertiary hover:text-white  active:border-tertiary">Proyectos</a>
-                    <a href="#habilidades" class="px-4 py-2 rounded-lg border-white border-4 hover:bg-tertiary hover:text-white  active:border-tertiary">Habilidades</a>
-                    <a href="#sobre-mi" class="px-4 py-2 rounded-lg border-white border-4 hover:bg-tertiary hover:text-white  active:border-tertiary">Sobre mí</a>
-                </nav>
-            </div>
-        </section>
+      <h1
+        class="py-5 px-5 bg-secondary text-3xl font-bold text-white border-b-4 border-b-black lg:hidden"
+      >
+        Mi portafolio 🗂️
+      </h1>
+      <!-- Botón de menú que aparece solo en pantallas pequeñas -->
+      <button
+        id="menu-btn"
+        class="py-5 px-5 text-xl font-bold text-white border-black border-4 bg-secondary rounded-lg fixed top-4 right-4 z-50 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-primary lg:hidden"
+      >
+        ☰ Menu
+      </button>
+
+      <!-- Menú lateral que se mostrará cuando se haga clic en el botón -->
+      <div
+        id="sidebar"
+        class="fixed inset-0 bg-black bg-opacity-50 hidden z-40 transform -translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div
+          class="absolute left-0 top-0 w-56 h-full bg-teal-800 text-white shadow-lg p-6"
+        >
+          <h2 class="text-3xl font-bold mb-6">Menú</h2>
+          <ul class="text-xl py-12 font-bold">
+            <li
+              class="flex items-stretch justify-center gap-2 mb-10 px-2 py-3 border-4 rounded-lg border-white"
+            >
+              <img src="./img/home.svg" alt="" /><a
+                href="#"
+                class="hover:text-teal-300 pt-2"
+                >Inicio</a
+              >
+            </li>
+            <li
+              class="flex items-stretch justify-center gap-2 mb-10 px-2 py-3 border-4 rounded-lg border-white"
+            >
+              <img src="./img/info.svg" alt="" /><a
+                href="#"
+                class="hover:text-teal-300 pt-2"
+                >Sobre mí</a
+              >
+            </li>
+            <li
+              class="flex items-stretch justify-center gap-2 mb-10 px-2 py-3 border-4 rounded-lg border-white"
+            >
+              <img src="./img/work.svg" alt="" /><a
+                href="#"
+                class="hover:text-teal-300 pt-2"
+                >Proyectos</a
+              >
+            </li>
+            <li
+              class="flex items-stretch justify-center gap-2 mb-10 px-2 py-3 border-4 rounded-lg border-white"
+            >
+              <img src="./img/contacto.svg" alt="" /><a
+                href="#"
+                class="hover:text-teal-300 pt-2"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <main class="max-w-4-xl mx-auto">
-        <section id="principal" class="flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-7">
-            <article class="xl:w-2/5 mt-10 flex justify-between">
-                <h2 class="max-w-md text-4xl font-bold text-center  sm:text-5xl sm:text-center my-auto text-slate-900 dark:text-white">
-                    Gabriel Cervantes Hernández
-                </h2>
-                <img src="./img/imagen_profesional.png" alt="imagen_profesional" class="w-32 xl:w-40 rounded-full box shadow-lg shadow-tertiary dark:shadow-white">
-            </article>
-        </section>
-        <section class="max-w-full bg-secondary sm:flex sm:justify-between 2xl:px-96 rounded-lg font-bold sm:py-0 py-1 dark:text-black" >
-            
-                <h2 class="px-4 py-2 max-w-xs text-center bg-white my-5 mx-auto rounded-lg shadow-lg shadow-tertiary"> ⭐ Proactivo</h2>
-                <h2 class="px-4 py-2 max-w-xs text-center bg-white my-5 mx-auto rounded-lg shadow-lg shadow-tertiary"> ⭐ Adaptabilidad</h2>
-                <h2 class="px-4 py-2 max-w-xs text-center bg-white my-5 mx-auto rounded-lg shadow-lg shadow-tertiary"> ⭐ Autodidacta</h2>
-                <h2 class="px-4 py-2 max-w-xs text-center bg-white my-5 mx-auto rounded-lg shadow-lg shadow-tertiary"> ⭐ Trabajo en equipo</h2>
-        </section>
-        <section id="proyectos">
-            <h2 class="text-5xl text-center font-bold my-10">
-                💼 Proyectos 💼
-            </h2>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-                <!-- Aquí se mostrarán los proyectos -->
-                <div class="rounded-lg bg-slate-200 border-8 border-secondary text-center lg:ml-32">
-                    <img src="./img/GIPP.png" alt="GIPP" class="w-64 mx-auto my-8">
-                    <h1 class="font-bold text-xl dark:text-black">Gestor de información y pruebas psicologicas - UPTX</h1>
-                    
-                    <div class="my-5 font-semibold">
-                        <button class="px-4 py-2 rounded-lg bg-secondary border-white border-4  hover:bg-tertiary hover:text-white  active:border-tertiary
-                        dark:text-black">
-                            Ver información
-                        </button>
-                    </div>
-                </div>
 
-                <div class="rounded-lg bg-slate-200 border-8 border-secondary text-center lg:mr-32">
-                    <img src="./img/GIPP.png" alt="GIPP" class="w-64 mx-auto my-8">
-                    <h1 class="font-bold text-xl dark:text-black">Sistema de citas para restaurante bar "El Arca"</h1>
-                    
-                    <div class="my-5 font-semibold">
-                        <button class="px-4 py-2 rounded-lg bg-secondary border-white border-4  hover:bg-tertiary hover:text-white  active:border-tertiary
-                        dark:text-black">
-                            Ver información
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main class="lg:py-40 pt-5 pb-8">
+      <section
+        class="lg:flex lg:justify-center lg:flex-row lg:items-center lg:gap-5"
+      >
+        <div class="lg:flex-col lg:w-1/2 lg:flex lg:items-center text-justify">
+          <h1 class="text-3xl text-center mt-9 mb-10 max-lg:py-2 max-lg:px-5">
+            ¡Bienvenid@ a mi portafolio!
+          </h1>
+          <p class="2xl:text-2xl text-xl my-4 max-lg:py-2 max-lg:px-5">
+            Soy Gabriel, desarrollador web especializado en back-end. Trabajo
+            con PHP, CodeIgniter 4, JavaScript, MySQL y más. Me apasiona la
+            programación, soy autodidacta y me adapto rápidamente a nuevos
+            retos.
+          </p>
 
-        <section id="habilidades">
+          <p
+            class="2xl:text-2xl text-center text-xl my-4 max-lg:py-2 max-lg:px-5"
+          >
+            ¡Espero que disfrutes explorando mi trabajo!
+          </p>
 
-            <h2 class="text-5xl text-center font-bold my-10">
-                👨‍💻 Habilidades 👨‍💻
-            </h2>
-           
-            <div class="relative w-full max-w-3xl mx-auto overflow-hidden dark:rounded-lg dark:bg-slate-200 dark:border-8 dark:border-secondary dark:py-5">
-                <!-- Contenedor de las diapositivas -->
-                <div id="carousel" class="flex transition-transform duration-500">
-                  <!-- Diapositiva 1 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/html5.png" alt="Slide 1" class="w-52 mx-auto">
-                  </div>
-                  <!-- Diapositiva 2 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/css.png" alt="Slide 2" class="w-36 mx-auto">
-                  </div>
-                  <!-- Diapositiva 3 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/JavaScript.png" alt="Slide 3" class="w-80 mx-auto">
-                  </div>
-                  <!-- Diapositiva 4 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/Bootstrap.png" alt="Slide 3" class="w-60 mx-auto">
-                  </div>
-                  <!-- Diapositiva 5 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/mysql.png" alt="Slide 3" class="w-52 mx-auto">
-                  </div>
-                  <!-- Diapositiva 6 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/PHP.png" alt="Slide 3" class="w-80 mx-auto">
-                  </div>
-                  <!-- Diapositiva 7 -->
-                  <div class="w-full flex-shrink-0">
-                    <img src="./img/codeigniter.svg" alt="Slide 3" class="w-44 mx-auto">
-                  </div>
-                </div>
-              
-                <!-- Controles -->
-                <button id="prev" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-l-md">
-                  &#10094;
-                </button>
-                <button id="next" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-r-md">
-                  &#10095;
-                </button>
-              </div>
-              
-        </section>
-        <section id="sobre-mi" class=" grid grid-cols-1 lg:grid-cols-2 gap-8 ">
-            <div class="">
+          <p class="text-4xl text-center">👨🏽‍💻</p>
+        </div>
 
-                <h2 class="lg:ml-24 text-5xl text-center font-bold my-10 mx-auto">
-                    👨🏽‍💼 Sobre mí 👨🏽‍💼
-                </h2>
-
-                <div class="px-10 py-10 lg:ml-24 text-justify border-8 bg-slate-200 rounded-lg border-secondary">
-                    <img src="./img/sobre-mi.jpg" class="w-1/2 mx-auto rounded-xl shadow-lg shadow-tertiary" alt="sobre-mi">
-                    <p class="text-xl font-semibold mt-5 dark:text-black"> 
-                        Mi nombre es Gabriel Cervantes Hernández. Soy egresado de la
-              Universidad Politécnica de Tlaxcala, donde cursé la carrera de
-              Ingeniería en Tecnologías de la Información. Actualmente me
-              encuentro en proceso de titulación. Me apasiona el desarrollo de
-              software y sus diversas áreas, como la programación, el manejo de
-              bases de datos y el diseño de interfaces, entre otras.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="  ">
-                <h2 class="text-5xl text-center lg:mr-20  font-bold my-10 mx-auto">📞 Contacto 📞</h2>
-
-                <div class="px-5 py-5 lg:mr-20  dark:bg-slate-200 dark:border-secondary dark:border-8 rounded-lg dark:text-black font-semibold">
-
-                    <div class="mb-10 flex text-3xl justify-center">
-                        <img src="./img/github.svg" class="w-20" alt="Github">
-                        <div class=" text-center my-auto ml-10">
-                            <a href="https://github.com/GaruCH"> GaruCH</a>
-                        </div>
-                    </div>
-    
-                    <div class="my-10 flex text-xl justify-center">
-                        <img src="./img/LinkedIn.png" class="w-20" alt="Github">
-                        <div class="text-center my-auto ml-10">
-                            <a href="https://www.linkedin.com/in/gabriel-cervantes-hernandez-0813b9226">Gabriel Cervantes Hernández</a>
-                        </div>
-                    </div>
-    
-                    <div class="my-10 flex text-xl justify-center ">
-                        <img src="./img/gmail.png" class="w-20  mb-5 " alt="Github">
-                        <div class=" text-center  my-auto ml-10 pr-12">
-                            <h2 class="">gabrielch1805 @gmail.com</h2>
-                        </div>
-                    </div>
-
-                    <div class="mt-10 flex text-3xl justify-center">
-                        <img src="./img/Facebook_icon.png" class="w-20" alt="facebook">
-                        <div class=" text-center my-auto ml-10">
-                            <a href="https://www.facebook.com/gabriel.jimenes.50702"> Garu CH</a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
+        <img
+          src="./img/imagen_profesional.png"
+          class="lg:w-4/12 2xl:w-96 my-16 mx-auto lg:mx-5 rounded-full border-8 shadow-2xl shadow-black border-accent"
+          alt=""
+        />
+      </section>
     </main>
-    <footer class="w-full bg-secondary mt-10 px-5 py-5 text-center text-black font-bold text-lg">
-        <h1 class="my-auto">@Gabriel-Cervantes-Hernández 👨🏽‍💼</h1>
+
+    <footer
+      class="bg-secondary py-5 flex justify-center text-white border-t-4 border-t-black"
+    >
+      <p class="text-lg">Derechos reservados &copy; 2025</p>
     </footer>
 
+    <script src="./node_modules/feather-icons/dist/feather.min.js"></script>
     <script src="./js/app.js"></script>
-</body>
+
+  </body>
 </html>

@@ -29,6 +29,7 @@
     "emoji-regex": "^9.2.2",
     "fast-glob": "^3.3.3",
     "fastq": "^1.18.0",
+    "feather-icons": "^4.29.2",
     "fill-range": "^7.1.1",
     "foreground-child": "^3.3.0",
     "function-bind": "^1.1.2",
@@ -98,8 +99,7 @@
     "yaml": "^2.7.0"
   },
   "scripts": {
-    "tailwind": "npx tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
-    ,
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./css/styles.css --watch",
     "prettier": "npx prettier --write **/*.html"
   },
   "keywords": [],
