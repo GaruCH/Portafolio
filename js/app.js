@@ -6,7 +6,7 @@ const sidebar = document.getElementById('sidebar');
 // Al hacer clic en el botón del menú, alternamos la clase 'show'
 menuBtn.addEventListener('click', () => {
   sidebar.classList.toggle('hidden');
-  menuBtn.classList.toggle('border-4'); // Mostramos el menú dentro de la pantalla
+  menuBtn.classList.toggle('border-white'); // Mostramos el menú dentro de la pantalla
   sidebar.classList.toggle('-translate-x-full');  // Movemos el menú dentro de la pantalla
 });
 
