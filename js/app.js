@@ -20,6 +20,8 @@ sidebar.addEventListener('click', (e) => {
 
 feather.replace();
 
+
+
 /*const carousel = document.getElementById('carousel');
 const slides = carousel.children;
 const totalSlides = slides.length;
