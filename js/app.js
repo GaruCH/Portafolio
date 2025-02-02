@@ -21,8 +21,28 @@ sidebar.addEventListener('click', (e) => {
 feather.replace();
 
 
+// Obtener elementos del DOM
+const openModal = document.getElementById('GIPP_btn');
+const closeModal = document.getElementById('closeModal');
+const modalOverlay = document.getElementById('modalOverlay');
+const body = document.body;
 
-/*const carousel = document.getElementById('carousel');
+// Función para abrir el modal
+openModal.addEventListener('click', () => {
+  modalOverlay.classList.remove('hidden');
+  body.classList.add('overflow-hidden'); // Bloquea el scroll del fondo
+});
+
+// Función para cerrar el modal
+closeModal.addEventListener('click', () => {
+  modalOverlay.classList.add('hidden');
+  body.classList.remove('overflow-hidden'); // Restaura el scroll del fondo
+});
+
+
+
+
+const carousel = document.getElementById('carousel');
 const slides = carousel.children;
 const totalSlides = slides.length;
 
@@ -44,4 +64,3 @@ document.getElementById('next').addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % totalSlides;
   updateCarousel();
 });
-*/
