@@ -195,7 +195,7 @@
           <div class="flex justify-center">
             <div class="text-center mb-5 w-3/4 md:w-1/2 lg:w-1/3 max-lg:px-5">
               <h1
-                class="text-4xl border-4 bg-accent py-5 rounded-lg border-white"
+                class="text-4xl border-4 bg-accent py-5 rounded-lg border-white font-bold"
               >
                 Proyectos
               </h1>
@@ -290,7 +290,7 @@
     >
       <!-- Contenido del Modal -->
       <div
-        class="bg-background p-6 rounded-lg shadow-lg w-11/12 max-w-3xl relative max-h-[80vh] overflow-y-auto"
+        class="bg-background p-6 rounded-lg shadow-lg w-11/12 max-w-5xl relative max-h-[80vh] overflow-y-auto"
       >
         <div>
           <h2 class="text-2xl font-bold mb-4 text-center">
@@ -300,56 +300,73 @@
 
         <div>
           <div
-            class="relative w-full max-w-3xl mx-auto overflow-hidden dark:rounded-lg dark:bg-slate-200 dark:border-8 dark:border-secondary dark:py-5"
+            class="relative w-full max-w-4xl mx-auto overflow-hidden dark:rounded-lg dark:bg-slate-200 dark:border-8 dark:border-secondary dark:py-5"
           >
             <!-- Contenedor de las diapositivas -->
             <div id="carousel" class="flex transition-transform duration-500">
               <!-- Diapositiva 1 -->
               <div class="w-full flex-shrink-0">
                 <img
-                  src="../img/html5.png"
+                  src="../img/GIPP/login.png"
                   alt="Slide 1"
-                  class="w-52 mx-auto"
+                  class="mx-auto"
                 />
               </div>
               <!-- Diapositiva 2 -->
               <div class="w-full flex-shrink-0">
-                <img src="../img/css.png" alt="Slide 2" class="w-36 mx-auto" />
+                <img
+                  src="../img/GIPP/registro.png"
+                  alt="Slide 2"
+                  class="mx-auto"
+                />
               </div>
               <!-- Diapositiva 3 -->
               <div class="w-full flex-shrink-0">
                 <img
-                  src="../img/JavaScript.png"
+                  src="../img/GIPP/inicio_admin.png"
                   alt="Slide 3"
-                  class="w-80 mx-auto"
+                  class="mx-auto"
                 />
               </div>
+
+              <div class="w-full flex-shrink-0">
+                <img
+                  src="../img/GIPP/asignaciones_admin.png"
+                  alt="Slide 3"
+                  class="mx-auto"
+                />
+              </div>
+
               <!-- Diapositiva 4 -->
               <div class="w-full flex-shrink-0">
                 <img
-                  src="../img/Bootstrap.png"
+                  src="../img/GIPP/psicologo_inicio.png"
                   alt="Slide 3"
-                  class="w-60 mx-auto"
+                  class="mx-auto"
                 />
               </div>
               <!-- Diapositiva 5 -->
               <div class="w-full flex-shrink-0">
                 <img
-                  src="../img/mysql.png"
+                  src="../img/GIPP/citas-psicologo.png"
                   alt="Slide 3"
-                  class="w-52 mx-auto"
+                  class="mx-auto"
                 />
               </div>
               <!-- Diapositiva 6 -->
               <div class="w-full flex-shrink-0">
-                <img src="../img/PHP.png" alt="Slide 3" class="w-80 mx-auto" />
+                <img
+                  src="../img/GIPP/inicio_paciente.png"
+                  alt="Slide 3"
+                  class="mx-auto"
+                />
               </div>
               <!-- Diapositiva 7 -->
               <div class="w-full flex-shrink-0">
                 <img
-                  src="../img/codeigniter.svg"
+                  src="../img/GIPP/test_psicologico_BDI.png"
                   alt="Slide 3"
-                  class="w-44 mx-auto"
+                  class="mx-auto"
                 />
               </div>
             </div>
@@ -370,7 +387,9 @@
           </div>
         </div>
 
-        <div class="flex md:justify-center max-sm:flex-wrap max-sm: justify-center mt-2 mb-5 gap-2 justify-items-center">
+        <div
+          class="flex max-sm:flex-wrap max-sm: justify-center mt-2 mb-5 gap-2 justify-items-center"
+        >
           <div>
             <p class="py-1 px-1 bg-primary text-white font-bold rounded-xl">
               Codeigniter 4
@@ -410,42 +429,261 @@
           </div>
         </div>
 
-        <div>
+        <div class="flex flex-col items-center">
           <div class="my-2">
-            <h2>Descripción del proyecto:</h2>
+            <h2 class="text-lg font-bold">Descripción del proyecto:</h2>
           </div>
 
           <div>
             <p class="text-justify">
               El área de Psicología de la Universidad Politécnica de Tlaxcala
               enfrentaba dificultades en la gestión de pruebas psicológicas
-              debido a procesos manuales y sistemas poco integrados. Para
-              solucionar esto, desarrollé una aplicación web que centraliza la
-              información de usuarios, pruebas, citas y más, reduciendo errores
-              y optimizando tiempos. Esta herramienta mejora la calidad del
-              servicio al facilitar el análisis de datos y agilizar la toma de
-              decisiones. Además, contribuye a la sostenibilidad institucional
-              al minimizar el uso de recursos físicos. En definitiva, es una
-              solución clave para fortalecer la atención psicológica y el
-              desarrollo académico.
+              debido a procesos manuales. Para solucionarlo, desarrollé una
+              aplicación web que centraliza la información de usuarios, pruebas
+              y citas, optimizando tiempos y reduciendo errores. Esto ha
+              mejorado la calidad del servicio al facilitar el análisis de datos
+              y la toma de decisiones.
             </p>
+          </div>
+          <div class="my-2">
+            <h2 class="text-lg font-bold">Módulos del sistema:</h2>
+          </div>
+          <div
+            class="w-full max-w-3xl bg-white p-2 md:p-6 rounded-lg shadow-lg my-4 relative"
+          >
+            <!-- Tabs con Scroll -->
+            <div
+              id="tab-container"
+              class="flex border-b overflow-x-auto whitespace-nowrap scrollbar-hide scroll-smooth px-2 md:justify-center"
+            >
+              <button
+                data-tab="modulo-1"
+                class="tab-button px-4 py-2 text-lg font-semibold border-b-2 border-primary text-black"
+              >
+                Módulo 1
+              </button>
+              <button
+                data-tab="modulo-2"
+                class="tab-button px-4 py-2 text-lg font-semibold text-gray-500 border-b-2"
+              >
+                Módulo 2
+              </button>
+              <button
+                data-tab="modulo-3"
+                class="tab-button px-4 py-2 text-lg font-semibold text-gray-500 border-b-2"
+              >
+                Módulo 3
+              </button>
+              <button
+                data-tab="modulo-4"
+                class="tab-button px-4 py-2 text-lg font-semibold text-gray-500 border-b-2"
+              >
+                Módulo 4
+              </button>
+              <button
+                data-tab="modulo-5"
+                class="tab-button px-4 py-2 text-lg font-semibold text-gray-500 border-b-2"
+              >
+                Módulo 5
+              </button>
+              <button
+                data-tab="modulo-6"
+                class="tab-button px-4 py-2 text-lg font-semibold text-gray-500 border-b-2"
+              >
+                Módulo 6
+              </button>
+            </div>
+
+            <!-- Contenido -->
+            <div class="mt-4">
+              <div
+                id="content-modulo-1"
+                class="tab-content flex flex-col items-center"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 1: Autenticación y Recuperación de Cuenta
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Login: Permite el acceso al sistema mediante credenciales
+                      de usuario.
+                    </li>
+                    <li>
+                      Recuperar Contraseña: Funcionalidad para restablecer la
+                      contraseña en caso de olvido.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div
+                id="content-modulo-2"
+                class="tab-content flex flex-col items-center hidden"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 2: Gestión de Usuarios
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Registro de Pacientes: Permite registrar a diferentes
+                      tipos de pacientes:
+                    </li>
+                    <li>Alumnos (estudiantes de la universidad).</li>
+                    <li>Administrativos (personal de la institución).</li>
+                    <li>
+                      Invitados (personas externas que requieren atención
+                      psicológica).
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div
+                id="content-modulo-3"
+                class="tab-content flex flex-col items-center hidden"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 3: Superadmin (Máximo nivel de administración del
+                    sistema)
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Inicio: Vista general con métricas y datos del sistema.
+                    </li>
+                    <li>
+                      Usuarios: Gestión de todos los usuarios del sistema
+                      (creación, edición, eliminación).
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div
+                id="content-modulo-4"
+                class="tab-content flex flex-col items-center hidden"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 4: Administrador (Encargado de la gestión de
+                    psicólogos y asignaciones)
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Inicio: Panel de control con información relevante del
+                      sistema y función para generar reportes en formato CSV con
+                      datos del sistema.
+                    </li>
+                    <li>
+                      Asignaciones: Modificar asignaciones de pacientes a
+                      psicólogos.
+                    </li>
+                    <li>
+                      Psicólogos: Administración de los perfiles de los
+                      psicólogos registrados en el sistema.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div
+                id="content-modulo-5"
+                class="tab-content flex flex-col items-center hidden"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 5: Psicólogos (Encargados de evaluar y atender
+                    pacientes)
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Inicio: Panel de control con información relevante de sus
+                      pacientes asignados.
+                    </li>
+                    <li>
+                      Generación de Reportes: Exportar reportes en CSV con los
+                      resultados de pruebas psicológicas y citas.
+                    </li>
+                    <li>
+                      Horarios: Gestión de disponibilidad y asignación de
+                      horarios de atención.
+                    </li>
+                    <li>
+                      Pacientes: Listado y administración de los pacientes
+                      asignados. Asignar pruebas psicológicas a los pacientes.
+                    </li>
+                    <li>
+                      Historial de Pacientes: Consulta del historial de
+                      pacientes atendidos.
+                    </li>
+                    <li>Citas: Agendar y gestionar citas con los pacientes.</li>
+                    <li>
+                      Historial de Citas: Registro de citas pasadas y futuras.
+                    </li>
+                    <li>
+                      Ubicación Actual: Funcionalidad para registrar su
+                      ubicación en tiempo real en el sistema.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+              <div
+                id="content-modulo-6"
+                class="tab-content flex flex-col items-center hidden"
+              >
+                <div>
+                  <h2 class="text-center text-lg font-bold">
+                    Módulo 6: Pacientes (Usuarios que reciben atención psicológica)
+                  </h2>
+                </div>
+
+                <div class="my-2 w-3/4 text-justify">
+                  <ol class="list-disc">
+                    <li>
+                      Inicio: Vista con información general de sus pruebas y citas.
+                    </li>
+                    <li>
+                      Citas: Agendar citas con psicólogos asignados.
+                    </li>
+                    <li>
+                      Historial de Citas: Consultar citas pasadas y futuras.
+                    </li>
+                    <li>
+                      Realización de Pruebas Psicológicas: Completar las pruebas asignadas por el psicólogo.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
         <!-- Botón para cerrar el modal -->
-        <div class="flex justify-between mt-4">
+        <div class="flex justify-start mt-4">
           <button
             id="closeModal"
             class="bg-red-500 text-white px-4 py-2 rounded shadow-md"
           >
             Cerrar
           </button>
-
-          <a
-            href="
-          "
-            class="bg-green-500 text-white px-4 py-2 rounded shadow-md"
-            >Ver demo</a
-          >
         </div>
       </div>
     </div>
