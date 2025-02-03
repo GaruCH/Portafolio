@@ -909,7 +909,7 @@ video {
 
 .border-accent {
   --tw-border-opacity: 1;
-  border-color: rgb(169 217 208 / var(--tw-border-opacity, 1));
+  border-color: rgb(207 169 174 / var(--tw-border-opacity, 1));
 }
 
 .border-black {
@@ -919,7 +919,7 @@ video {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(2 115 115 / var(--tw-border-opacity, 1));
+  border-color: rgb(79 25 31 / var(--tw-border-opacity, 1));
 }
 
 .border-white {
@@ -939,7 +939,7 @@ video {
 
 .bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(169 217 208 / var(--tw-bg-opacity, 1));
+  background-color: rgb(207 169 174 / var(--tw-bg-opacity, 1));
 }
 
 .bg-background {
@@ -954,7 +954,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 115 115 / var(--tw-bg-opacity, 1));
+  background-color: rgb(79 25 31 / var(--tw-bg-opacity, 1));
 }
 
 .bg-red-500 {
@@ -964,7 +964,7 @@ video {
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(3 140 127 / var(--tw-bg-opacity, 1));
+  background-color: rgb(122 59 66 / var(--tw-bg-opacity, 1));
 }
 
 .bg-teal-800 {
@@ -1160,6 +1160,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(79 25 31 / var(--tw-text-opacity, 1));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1232,12 +1237,12 @@ video {
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 115 115 / var(--tw-bg-opacity, 1));
+  background-color: rgb(79 25 31 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(2 115 115 / var(--tw-text-opacity, 1));
+  color: rgb(79 25 31 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
@@ -1461,7 +1466,7 @@ video {
 
   .dark\:border-secondary {
     --tw-border-opacity: 1;
-    border-color: rgb(3 140 127 / var(--tw-border-opacity, 1));
+    border-color: rgb(122 59 66 / var(--tw-border-opacity, 1));
   }
 
   .dark\:bg-slate-200 {

@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary: "#027373",   // Verde oscuro
-        secondary: "#038C7F", // Verde medio
-        accent: "#A9D9D0",    // Verde claro
+        primary: "#4F191F",   // Verde oscuro
+        secondary: "#7A3B42", // Verde medio
+        accent: "#CFA9AE",    // Verde claro
         background: "#F2E7DC", // Crema (fondo en modo claro)
         darkbg: "#0D0D0D",    // Negro (fondo en modo oscuro)
         textlight: "#0D0D0D", // Texto oscuro para modo claro
